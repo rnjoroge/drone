@@ -40,6 +40,73 @@ POST {base_url}/api/v1/drone/registration
 ```
 
 
+2 . Load a Drone with Medicine
+    
+   loading a drone with medication items
+  
+
+```http
+POST {base_url}/api/v1/drone/load
+```
+   Drone Load Request
+   
+   
+```javascript
+{
+	"serialNumber":"test",
+	"load":[{
+		     "name":"penicillin" ,
+	         "weight":150 ,
+             "code":"PEN" ,
+	         "image":"img"
+         	}
+		]
+}
+```
+
+3 . Fetch Drone Loads
+
+ checking loaded medication items for a given drone
+
+```http
+GET {base_url}/api/v1/drone/load/{serialNumber}
+
+```
+
+4 . Fetch Drone Battery Level
+
+ check drone battery level for a given drone
+
+```http
+GET {base_url}/api/v1/drone/battery/{serialNumber}
+
+```
+
+5 . Fetch Available Drones
+
+ checking available drones for loading
+
+```http
+GET {base_url}/api/v1/drone/available
+
+```
+
+6 . Dispatch a Drone
+  
+
+```http
+POST {base_url}/api/v1/drone/registration
+```
+   Drone Dispatch Request
+
+```javascript
+{
+	"serialNumber":"test"
+}
+```
+
+
+
 
 ## Tests
 
