@@ -2,6 +2,11 @@ package musala.entity;
 
 import musala.exceptions.BussinessException;
 
+
+/**
+ * 
+ */
+
 public class Result<T> {
 
 	  public Boolean isSuccess;

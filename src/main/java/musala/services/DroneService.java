@@ -19,6 +19,10 @@ import musala.tasks.DroneBatteryLevelTask;
 import musala.usecase.DroneUseCases;
 
 
+/**
+ * This class contains service methods that handles api calls
+ */
+
 
 public class DroneService {
 	

@@ -11,7 +11,14 @@
      mvn clean package
      java -jar target/musal-drone-0.0.1-SNAPSHOT.jar
   ```
+  
+2 .Run the application is using docker , if you have docker installed run
 
+  ```bash
+     docker build -t musala/drone-app-demo:0.0.1-SNAPSHOT .
+     docker run musala/drone-app-demo:0.0.1-SNAPSHOT
+  ```
+  
 The default api port is 8383 
 Baseurl for local host http://127.0.0.1:8383
 
@@ -110,5 +117,11 @@ POST {base_url}/api/v1/drone/registration
 
 ## Tests
 
-Test are available under src/test/java directory
+Running Test with maven
+
+  ```bash
+     mvn clean test
+  ```
+
+
      

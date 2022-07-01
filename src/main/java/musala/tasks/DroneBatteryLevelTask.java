@@ -1,6 +1,8 @@
 package musala.tasks;
 
 import java.io.BufferedWriter;
+
+
 import java.io.FileWriter;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -14,6 +16,11 @@ import org.tinylog.Logger;
 import musala.entity.Drone;
 import musala.entity.Result;
 import musala.repository.IDroneRepository;
+
+
+/**
+ * This class contains the task that runs to check Drone and record drone battery level
+ */
 
 public class DroneBatteryLevelTask extends TimerTask {
 	
